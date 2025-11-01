@@ -8,7 +8,7 @@ package com.oops;
  * superclass.
  */
 public class MethodHiding {
-    public static void main() {
+    public static void main(String[] args) {
         SuperClass ref = new SubClass();
         ref.printSomething(); // This will call SuperClass's printSomething() method
         SubClass.printSomething(); // This will call SubClass's printSomething() method

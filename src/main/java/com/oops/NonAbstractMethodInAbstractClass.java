@@ -1,7 +1,7 @@
 package com.oops;
 
 public class NonAbstractMethodInAbstractClass {
-    public static void main() {
+    public static void main(String[] args) {
         ConcreteOne concrete = new ConcreteOne();
         concrete.doSomething();
     }

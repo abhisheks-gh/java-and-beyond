@@ -7,7 +7,7 @@ package com.oops;
  * the superclass's static method, not override it.
  */
 public class CanWeOverrideStaticMethods {
-    public static void main() {
+    public static void main(String[] args) {
         SuperClass1 ref = new SubClass1();
         ref.doSomething(); // This will call SuperClass's doSomething() method
         SubClass1.doSomething(); // This will call SubClass's doSomething() method
