@@ -1,7 +1,7 @@
 package com.oops;
 
 /**
- * Java 5 onwards, we can change the return type of method to subclass while overriding.
+ * Java 5 onwards, we can change the return type of method from superclass to subclass while overriding.
  * This feature is known as Covariant Method Overriding.
  * What is Covariant Return Type?
  * Covariant return type allows a method in subclass to override a method in the superclass
