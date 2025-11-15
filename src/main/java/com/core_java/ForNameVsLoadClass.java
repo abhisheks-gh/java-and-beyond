@@ -29,17 +29,10 @@ public class ForNameVsLoadClass {
 //            System.out.println(Arrays.toString(methods));
 
             // Using ClassLoader.loadClass()
+//            ClassLoader loader = Thread.currentThread().getContextClassLoader();
             Class<?> cls = ClassLoader.getSystemClassLoader().loadClass("java.util.HashMap");
             Field[] fields = cls.getDeclaredFields();
             System.out.println(Arrays.toString(fields));
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("------------------------------------------------");
-        ForNameVsLoadClass obj = new ForNameVsLoadClass();
-        try {
-            obj.printClassLoader();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
